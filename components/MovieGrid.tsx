@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Movie from "../core/domain/model/movie";
+import Movie from "../core/domain/model/Movie";
 import MovieCard from "./MovieCard";
 
 const Wrapper = styled.div`

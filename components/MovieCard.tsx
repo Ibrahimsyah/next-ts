@@ -1,4 +1,4 @@
-import Movie from "../core/domain/model/movie";
+import Movie from "../core/domain/model/Movie";
 import styled from "styled-components";
 import Link from "next/link";
 

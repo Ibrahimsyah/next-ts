@@ -1,7 +1,7 @@
 import { GetServerSideProps } from "next";
 import Head from "next/head";
 import MovieGrid from "../components/MovieGrid";
-import MovieInteractor from "../core/domain/usecase/movie-interactor";
+import MovieInteractor from "../core/domain/usecase/MovieInteractor";
 import styles from "../styles/Home.module.css";
 
 export default function Home(props: any) {
