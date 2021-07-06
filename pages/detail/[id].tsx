@@ -63,6 +63,11 @@ const Description = styled.p`
   color: #868686;
 `;
 
+const Statistic = styled.div`
+  display: flex;
+  justify-content: space-around;
+`;
+
 export default function Detail(props: DetailProps) {
   const data: MovieDetail = props.data;
   return (
@@ -75,6 +80,11 @@ export default function Detail(props: DetailProps) {
           <Section withPadding>
             <Title>{data.title}</Title>
             <GenreList genreList={data.genres} />
+            <Statistic>
+              <div>
+                
+              </div>
+            </Statistic>
             <Description>{data.overview}</Description>
           </Section>
           <Section fluid>
