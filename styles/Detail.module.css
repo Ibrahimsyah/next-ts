@@ -1,0 +1,8 @@
+.mainContainer{
+  background: linear-gradient(180DEG, rgb(41, 21, 21), #000);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding: 32px;
+}

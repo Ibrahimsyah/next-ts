@@ -19,7 +19,7 @@ const Mapper = {
   },
 
   movieDetailResponseToDomain: (response: DetailResponse): MovieDetail => {
-    const posterUrl = `${Constanst.IMAGE_BASE_THUMB}${response.poster_path}`
+    const posterUrl = `${Constanst.IMAGE_BASE_FULL}${response.poster_path}`
     const genres = response.genres.map(genre => genre.name)
     return {
       title: response.title,

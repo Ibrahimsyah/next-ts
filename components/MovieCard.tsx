@@ -5,6 +5,11 @@ import Link from "next/link";
 const MovieImage = styled.img`
   width: 100%;
   height: 200px;
+  cursor: pointer;
+  transition: 1s ease-out;
+  &:hover{
+    transform: scale(1.2);
+  }
 `;
 
 const Wrapper = styled.div`
