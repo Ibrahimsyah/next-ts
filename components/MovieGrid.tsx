@@ -5,7 +5,7 @@ import MovieCard from "./MovieCard";
 const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
 `;
 
 const MovieGrid = (props: MovieGridProps) => {

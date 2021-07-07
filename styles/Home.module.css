@@ -1,23 +1,24 @@
 .mainContainer {
- padding: 32px;
+ padding: 32px 64px;
  min-width: 100vh;
- background: rgb(39, 39, 39);
+ background: #0c111b;
 }
 
 .siteTitle,
 .siteDescription {
- color: #d43621;
- text-align: center;
+ color: #fff;
+ text-align: start;
 }
 
 .siteDescription {
  font-size: 1.2em;
  margin-bottom: 32px;
+ margin-bottom: 62px;
 }
 
 .siteMovieType {
- color: #d43621;
- padding: 12px;
- font-size: 1em;
+ color: #fff;
+ margin-top: 16px;
+ font-size: 1.2em;
  font-weight: 800;
 }

@@ -10,20 +10,31 @@ const MovieImage = styled.img`
 const Wrapper = styled.div`
   overflow: hidden;
   border-radius: 8px;
-  background: #fff;
   margin: 8px;
+  cursor: pointer;
 `;
+
+const Title = styled.div`
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  margin: 8px;
+`
 
 const MovieCard = (props: MovieCardProps) => {
   const { movie } = props;
   return (
     <>
-      <div className="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+      <div className="col-1">
         <Link href={`/detail/${movie.id}`} passHref>
-          <Wrapper>
-            <MovieImage src={movie.posterPath} alt={movie.title ? `${movie.title} Image` : 'gambar'} />
-          </Wrapper>
+            <Wrapper>
+              <MovieImage src={movie.posterPath} alt={movie.title} />
+            </Wrapper>
         </Link>
+            <Title>{movie.title}</Title>
       </div>
     </>
   );
