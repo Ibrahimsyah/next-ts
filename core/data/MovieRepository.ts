@@ -17,8 +17,6 @@ const MovieRepository: IMovieRepository = {
     const result = Mapper.movieDetailResponseToDomain(data)
     return result
   },
-
-  // devsbot add: get top movies
   getTopMovies: async () => {
     const { data } = await Api.getTopMovies()
     const { results }: { results: MovieResponse[] } = data
