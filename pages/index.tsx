@@ -9,11 +9,11 @@ export default function Home(props: any) {
   return (
     <>
       <Head>
-        <title>NdelokMovie</title>
+        <title>Exclusive Meme</title>
       </Head>
       <main className={styles.mainContainer}>
-        <h1 className={styles.siteTitle}>NdelokMovie</h1>
-        <h3 className={styles.siteDescription}>Monggo didelok Movie sangar sangar</h3>
+        <h1 className={styles.siteTitle}>Streaming Meme</h1>
+        <h3 className={styles.siteDescription}>Monggo dipun tingali pilem ingkan sae :)</h3>
         <h3 className={styles.siteMovieType}>Tayang sekarang</h3>
         <MovieGrid movies={data} />
         <h3 className={styles.siteMovieType}>Top Rated</h3>
