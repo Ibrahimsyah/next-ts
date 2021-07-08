@@ -22,6 +22,12 @@ const MovieRepository: IMovieRepository = {
     const { results }: { results: MovieResponse[] } = data
     const topMovies = Mapper.movieResponseToDomain(results)
     return topMovies
+  },
+  getMovieRecommendation: async (movieId: number) => {
+    const { data } = await Api.getMovieRecommendation(movieId)
+    const { results }: { results: MovieResponse[] } = data
+    const movies = Mapper.movieResponseToDomain(results)
+    return movies
   }
 }
 
