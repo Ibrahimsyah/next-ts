@@ -20,7 +20,7 @@ const MainWrapper = styled.div`
   border-radius: 16px;
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 60vh;
   overflow: hidden;
 `;
 
@@ -32,7 +32,7 @@ const Section = styled.div<SectionProps>`
 
 const ThumbnailMask = styled.div`
   width: 100%;
-  height: 60vh;
+  height: 100%;
   position: relative;
   &::before {
     position: absolute;
@@ -59,13 +59,34 @@ const Title = styled.h1`
 `;
 
 const Description = styled.p`
-  margin-top: 32px;
+  margin-top: 16px;
   color: #868686;
+  font-size: 13px;
 `;
 
 const Statistic = styled.div`
+  margin-top: 16px;
   display: flex;
   justify-content: space-around;
+`;
+
+const StatisticContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const StatNumber = styled.h3`
+  color: ${(props) => props.color};
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0;
+`;
+
+const StatLabel = styled.p`
+  color: ${(props) => props.color};
+  font-size: 0.8em;
+  margin: 0;
 `;
 
 export default function Detail(props: DetailProps) {
@@ -81,9 +102,14 @@ export default function Detail(props: DetailProps) {
             <Title>{data.title}</Title>
             <GenreList genreList={data.genres} />
             <Statistic>
-              <div>
-                
-              </div>
+              <StatisticContent>
+                <StatNumber color="#18d36c">{data.voteAverage} / 10</StatNumber>
+                <StatLabel color="#18d36c">Vote</StatLabel>
+              </StatisticContent>
+              <StatisticContent>
+                <StatNumber color="#ee720c">{data.popularity}</StatNumber>
+                <StatLabel color="#ee720c">Popularity</StatLabel>
+              </StatisticContent>
             </Statistic>
             <Description>{data.overview}</Description>
           </Section>
