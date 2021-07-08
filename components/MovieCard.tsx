@@ -33,7 +33,7 @@ const MovieCard = (props: MovieCardProps) => {
   const { movie } = props;
   return (
     <>
-      <div className="col-1">
+      <div className="col-2">
         <Link href={`/detail/${movie.id}`} passHref>
             <Wrapper>
               <MovieImage src={movie.posterPath} alt={movie.title} />
