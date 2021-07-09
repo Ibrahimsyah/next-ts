@@ -17,8 +17,8 @@
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
-    "@types/node": "^16.0.0",
-    "@types/react": "^17.0.13",
+    "@types/node": "^16.0.1",
+    "@types/react": "^17.0.14",
     "@types/styled-components": "^5.1.11",
     "eslint": "7.30.0",
     "eslint-config-next": "11.0.1",

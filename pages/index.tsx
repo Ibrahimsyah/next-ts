@@ -9,12 +9,12 @@ export default function Home(props: any) {
   return (
     <>
       <Head>
-        <title>Exclusive Meme</title>
+        <title>Home | Open Movies</title>
       </Head>
       <main className={styles.mainContainer}>
-        <h1 className={styles.siteTitle}>Streaming Meme</h1>
-        <h3 className={styles.siteDescription}>Monggo dipun tingali pilem ingkan sae :)</h3>
-        <h3 className={styles.siteMovieType}>Tayang sekarang</h3>
+        <h1 className={styles.siteTitle}>Open Movies</h1>
+        <h3 className={styles.siteDescription}>We provides recommendations for the best and latest films just for you</h3>
+        <h3 className={styles.siteMovieType}>Now Playing</h3>
         <MovieGrid movies={data} />
         <h3 className={styles.siteMovieType}>Top Rated</h3>
         <MovieGrid movies={top} />
